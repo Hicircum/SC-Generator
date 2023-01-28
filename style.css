@@ -90,6 +90,30 @@ body{
     border-radius: 10px;
 }
 
+.about{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.274);
+    max-width: 1000px;
+    position: relative;
+}
+
+.about::before{
+    content: "关于";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #3d8bfd;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
 .hide{
     display: none;
 }
