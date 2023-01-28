@@ -1,0 +1,165 @@
+:root{
+    --sc-width: 269px;
+    --sc-head-bg: var(--class0-head-bg);
+    --sc-body-bg: var(--class0-body-bg);
+    --class0-head-bg: #EDF5FF;
+    --class0-body-bg: #2A60B2;
+    --class1-head-bg: rgb(219, 255, 253);
+    --class1-body-bg: rgb(66, 125, 158);
+    --class2-head-bg: rgb(255, 241, 197);
+    --class2-body-bg: rgb(226, 181, 43);
+    --class3-head-bg: rgb(255, 234, 210);
+    --class3-body-bg: rgb(224, 148, 67);
+    --class4-head-bg: rgb(255, 231, 228);
+    --class4-body-bg: rgb(229, 77, 77);
+    --class5-head-bg: rgb(255, 216, 216);
+    --class5-body-bg: rgb(171, 26, 50);
+}
+
+body{
+    background-color: #f4f8fb;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fbfbfb;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d8bfd;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+  
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.generator{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.274);
+    max-width: 1000px;
+    position: relative;
+}
+
+.generator::before{
+    content: "SC生成器";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #3d8bfd;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+.output{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.274);
+    max-width: 1000px;
+    position: relative;
+}
+
+.output::before{
+    content: "生成结果";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #3d8bfd;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.result-container{
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.sc-container{
+    border: #c3d6f4 1px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+/* style from https://zh.moegirl.org.cn/Template:SC */
+.sc-card{
+    position:relative;
+    display:flex;
+    float:none;
+    font-family: Arial,Microsoft YaHei,Microsoft Sans Serif,Microsoft SanSerf,\5c 5FAE软雅黑!important;
+    font-size:12px;
+    line-height:1.15;
+    width: var(--sc-width);
+}
+
+.sc-card-main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 130px;
+    border: 1px solid var(--sc-body-bg);
+    border-radius:6px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+.sc-card-head{
+    position:relative;
+    background-color: var(--sc-head-bg);
+    color:rgb(0,0,0);
+    font-weight:500;
+    min-height:48px;
+    display:flex;
+    flex-direction:row;
+}
+
+.sc-card-body{
+    width: 100%;
+    padding: 2px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    overflow-y: hidden;
+    position: relative;
+    display: block;
+    background-color: var(--sc-body-bg);
+}
+
+.sc-content{
+    display: inline-block;
+    vertical-align: middle;
+    width: 99%;
+}
+
+.rank{
+    max-width: 200px;
+}
