@@ -103,7 +103,7 @@ body{
 }
 
 .about::before{
-    content: "关于";
+    content: "New!";
     position: absolute;
     top: -20px;
     left: 20px;
@@ -211,4 +211,5 @@ body{
 .rank{
     max-width: 200px;
 }
+
 
